@@ -1,0 +1,29 @@
+﻿code,name,city,full_address,long,lat,district,county,SPgrade,EOG_18_19,EOG_quintile,percent_EDS,child_abuse_rate,children_conc_pov,elevated_lead,juv_delinquent,No_HSdegree,parent_unemployed,county_poc,county_tier,poverty_county,median_inc_county
+50303,Ashe County Early College High,West Jefferson,"363 Campus Drive, West Jefferson, NC 28694",,,Ashe County Schools,Ashe,A,95.00,1,36.70,5.20,0.00,1.10,12.30,12.50,5.50,7.10,2,23.30,41864
+90376,Bladen Early College,Dublin,"7418 NC Hwy 41 W, Dublin, NC 28332",,,Bladen County Schools,Bladen,C,54.50,3,74.50,2.40,16.20,0.90,7.10,19.10,15.80,44.70,1,41.80,36976
+120354,Mountain View Elementary,Morganton,"805 Bouchelle St, Morganton, NC 28655",,,Burke County Schools,Burke,D,44.40,3,82.60,2.70,0.00,0.90,23.20,17.00,12.50,17.60,2,19.90,44946
+160343,Marine Sci. & Tech. Early College HS,Morehead City,"3505 Arendell Street, Morehead City, NC 28557",,,Carteret County Public Schools,Carteret,A,88.10,1,64.60,7.60,2.60,0.60,13.30,6.20,7.40,12.30,2,15.50,55052
+29A000,Davidson Charter Academy CFA,Lexington,"500 Biesecker Rd, Lexington, NC 27295",,,Charter Schools,Davidson,D,42.30,3,22.70,3.30,12.30,1.00,17.60,15.10,8.70,19.30,2,20.00,47758
+34Z000,Appalachian Academy at Middle Fork,Walkertown,"3125 Williston Rd, Walkertown, NC 27051",,,Lab Schools,Forsyth,D,25.40,4,<5,1.10,27.90,1.50,23.30,9.80,9.50,42.70,2,23.00,50112
+390321,Granville Academy,Oxford,"200 Taylor Street, Oxford, NC 27565",,,Granville County Schools,Granville,D,48.90,3,38.60,4.00,13.00,1.30,6.70,11.90,10.20,41.40,2,18.40,58956
+41N000,The Experiential School of Greensboro,Greensboro,"301 S Church St, Greensboro, NC 27401",,,Charter Schools,Guilford,D,50.00,3,18.70,0.20,18.60,1.10,22.10,9.10,8.00,49.30,2,22.10,52166
+51B000,Johnston Charter Academy,Clayton,"40 Scholar Dr, Clayton, NC 27520",,,Charter Schools,Johnston,C,60.80,2,23.20,1.40,2.60,1.00,9.00,11.00,7.30,31.80,3,15.40,60296
+53B000,Ascend Leadership Academy Lee County,Sanford,"226-268, Harvey Faulk Rd, Sanford, NC 27332",,,Charter Schools,Lee,D,54.10,3,17.40,1.60,14.10,1.50,28.90,14.30,5.70,41.30,2,22.20,48984
+590326,McDowell Academy for Innovation,Marion,"172 Lukin St, Marion, NC 28752",,,McDowell County Schools,McDowell,C,50.80,3,54.50,6.40,0.00,2.30,14.90,13.90,8.90,11.80,2,20.10,43972
+61X000,Mountain Island Day Community Charter,Charlotte,"1209 Little Rock Rd, Charlotte, NC 28214",,,Charter Schools,Mecklenburg,C,53.40,3,9.20,2.20,12.90,0.80,17.50,8.60,4.90,52.70,3,16.40,64509
+600593,Villa Heights Elementary,Charlotte,"800 Everett Pl, Charlotte, NC 28205",,,Charlotte-Mecklenburg Schools,Mecklenburg,D,43.80,3,64.70,2.20,12.90,0.80,17.50,8.60,4.90,52.70,3,16.40,64509
+600583,Wilson STEM Academy,Charlotte,"7020 Tuckaseegee Rd, Charlotte, NC 28214",,,Charlotte-Mecklenburg Schools,Mecklenburg,F,24.30,4,64.70,2.20,12.90,0.80,17.50,8.60,4.90,52.70,3,16.40,64509
+600303,Charlotte East Language Academy,Charlotte," 6108 Wilora Lake Rd, Charlotte, NC 28212",,,Charlotte-Mecklenburg Schools,Mecklenburg,D,41.20,3,57.00,2.20,12.90,0.80,17.50,8.60,4.90,52.70,3,16.40,64509
+61W000,East Voyager Academy of Charlotte,Charlotte," 7429 Tuckaseegee Rd, Charlotte, NC 28214",,,Charter Schools,Mecklenburg,C,58.90,3,17.50,2.20,12.90,0.80,17.50,8.60,4.90,52.70,3,16.40,64509
+640342,CITI High School,Rocky Mount,"846 Hammond St, Rocky Mount, NC 27804",,,Nash-Rocky Mount Schools,Nash,F,<5,1,83.30,4.80,0.00,2.00,13.80,11.20,7.60,50.00,1,20.70,50122
+710350,Surf City Elementary,Hampstead,"12345-A Literacy Ln, Hampstead, NC 28443",,,Pender County Schools,Pender,B,74.80,2,39.30,3.00,0.00,1.50,14.30,9.70,6.70,23.90,3,20.80,54900
+710352,Surf City Middle,Hampstead,"12345-B Literacy Ln, Hampstead, NC 28444",,,Pender County Schools,Pender,B,69.40,2,32.40,3.00,0.00,1.50,14.30,9.70,6.70,23.90,3,20.80,54900
+740501,Innovation Early College High,Greenville,"E 10th St, Greenville, NC 27858",,,Pitt County Schools,Pitt,A,88.90,1,56.60,5.20,29.20,0.80,23.30,8.90,5.80,44.90,1,25.60,43303
+800406,West Rowan Elementary,Cleveland,"480 Mimosa St, Cleveland, NC 27013",,,Rowan-Salisbury Schools,Rowan,C,57.50,3,55.40,3.30,6.70,1.70,14.30,13.80,10.10,27.40,2,24.00,46864
+80B000,Essie Mae Kiser Foxx Charter,East Spencer,"729 N. Long St , East Spencer, NC 28144",,,Charter Schools,Rowan,F,9.50,5,60.00,3.30,6.70,1.70,14.30,13.80,10.10,27.40,2,24.00,46864
+93R000,Raleigh Oak Charter,Raleigh,"9400 Forum Dr, Raleigh, NC 27615",,,Charter Schools,Wake,C,56.20,3,5.10,1.80,3.10,1.20,6.70,5.90,4.00,39.10,3,9.70,80169
+93P000,Rolesville Charter Academy,Rolesville,"908 Eagle Scholars Drive, Rolesville, NC 27571",,,Charter Schools,Wake,C,64.70,2,22.50,1.80,3.10,1.20,6.70,5.90,4.00,39.10,3,9.70,80169
+920561,South Garner High,Garner,"8228 Hebron Church Rd, Garner, NC 27529",,,Wake County Schools,Wake,D,37.70,4,58.20,1.80,3.10,1.20,6.70,5.90,4.00,39.10,3,9.70,80169
+920315,Apex Friendship Middle,Apex,"7701 Humie Olive Rd, Apex, NC 27502",,,Wake County Schools,Wake,A,84.00,1,13.10,1.80,3.10,1.20,6.70,5.90,4.00,39.10,3,9.70,80169
+920349,Bryan Road Elementary,Garner,"8317 Bryan Rd, Garner, NC 27529",,,Wake County Schools,Wake,B,66.90,2,48.80,1.80,3.10,1.20,6.70,5.90,4.00,39.10,3,9.70,80169
+920351,Buckhorn Creek Elementary,Holly Springs,"5651 Honeycutt Rd, Holly Springs, NC 27540",,,Wake County Schools,Wake,C,63.80,2,32.50,1.80,3.10,1.20,6.70,5.90,4.00,39.10,3,9.70,80169
