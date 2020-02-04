@@ -67,7 +67,6 @@ Ashe,2,23.3,41864,50335,Westwood Elementary,West Jefferson,"4083 US Hwy 221S, We
 Ashe,2,23.3,41864,50305,Ashe County Middle,Warrensville,"255 Northwest Lane, Warrensville, NC 28693",-81.509979,36.462739,Ashe County Schools,55.4,B,72,2
 Ashe,2,23.3,41864,50310,Blue Ridge Elementary,Warrensville,"5778 NC Hwy 88 W, Warrensville, NC 28693",-81.531441,36.4618417,Ashe County Schools,60.1,B,71.9,2
 Avery,2,24.4,41701,60304,Banner Elk Elementary,Banner Elk,"155 Orchard Lane, Banner Elk, NC 28604",-81.8572987,36.1488516,Avery County Schools,52.5,B,68.4,2
-Avery,2,24.4,41701,06A000,Grandfather Academy,Banner Elk,"64 Grandfather Home Drive, Banner Elk, NC 28604",-81.8783765,36.1521736,Charter Schools,50,F,<5,1
 Avery,2,24.4,41701,60318,Avery Middle,Newland,"102 Old Montezuma Road, Newland, NC 28657",-81.9159937,36.067157,Avery County Schools,55.7,B,70.8,2
 Avery,2,24.4,41701,60701,Avery High Viking Academy,Newland,"401 Avery County High School Rd, Newland, NC 28657",-81.91897,36.0692387,Avery County Schools,60,F,10.5,5
 Avery,2,24.4,41701,60302,Avery County High,Newland,"401 Avery County High School Road, Newland, NC 28657",-81.91897,36.0692387,Avery County Schools,46.9,B,62.5,2
@@ -81,7 +80,6 @@ Beaufort,1,26.2,46411,70329,Northeast Elementary,Pinetown,"21000 US Hwy 264 East
 Beaufort,1,26.2,46411,70330,Northside High,Pinetown,"7868 Free Union Church Road, Pinetown, NC 27865",-76.7299827,35.5365774,Beaufort County Schools,42.1,C,43.6,3
 Beaufort,1,26.2,46411,70340,S W Snowden Elementary,Aurora,"693 North 7th Street, Aurora, NC 27806",-76.7925358,35.3064178,Beaufort County Schools,84.4,C,43.6,3
 Beaufort,1,26.2,46411,70308,Bath Elementary,Bath,"110 S King Street, Bath, NC 27808",-76.8111894,35.4751685,Beaufort County Schools,27.7,C,68.3,2
-Beaufort,1,26.2,46411,70311,Beaufort Co Early College High,Washington,"5337 Hwy 264 East, Washington, NC 27889",-76.9652678,35.5337105,Beaufort County Schools,53.1,A,>95,1
 Beaufort,1,26.2,46411,07A000,Washington Montessori,Washington,"2330 Old Bath Hwy, Washington, NC 27889",-76.9795696,35.5398036,Charter Schools,10,C,65.8,2
 Beaufort,1,26.2,46411,70342,Washington High,Washington,"400 Slatestone Road, Washington, NC 27889",-77.0151413,35.5573276,Beaufort County Schools,50.2,C,36.5,4
 Beaufort,1,26.2,46411,70338,P S Jones Middle,Washington,"4105 N Market Street Ext, Washington, NC 27889",-77.0351852,35.5990328,Beaufort County Schools,60.8,C,49.7,3
@@ -124,7 +122,6 @@ Brunswick,3,19,60163,100339,Town Creek Elementary,Winnabow,"6330 Lake Park Dr SE
 Brunswick,3,19,60163,10A000,Charter Day School,Leland,"7055 Bacon's Way, Leland, NC 28451",-78.1361514,34.2831272,Charter Schools,34.6,B,73,2
 Brunswick,3,19,60163,100304,Bolivia Elementary,Bolivia,"4036 Business Hwy 17-E, Bolivia, NC 28422",-78.1446849,34.070355,Brunswick County Schools,71.9,B,67,2
 Brunswick,3,19,60163,10B000,South Brunswick Charter,Bolivia,"2260 Achievement Ave SE, Bolivia, NC 28422",-78.1988448,33.9733824,Charter Schools,16.5,B,75.2,2
-Brunswick,3,19,60163,100307,Brunswick County Early College,Bolivia,"50 College Road NE, Bolivia, NC 28422",-78.2290128,34.038474,Brunswick County Schools,46.8,A,>95,1
 Brunswick,3,19,60163,100342,Virginia Williamson Elem,Bolivia,"1020 Zion Hill Road, Bolivia, NC 28422",-78.2368264,33.9941,Brunswick County Schools,75.5,C,57.8,3
 Brunswick,3,19,60163,100338,Supply Elementary,Supply,"51 Benton Road SE, Supply, NC 28462",-78.258371,34.0251019,Brunswick County Schools,84.7,D,44.8,3
 Brunswick,3,19,60163,100309,Cedar Grove Middle,Supply,"750 Grove Trail SW, Supply, NC 28462",-78.270573,33.9666753,Brunswick County Schools,75.5,C,50.9,3
@@ -168,7 +165,6 @@ Buncombe,3,16.6,53960,111306,Isaac Dickson Elementary,Asheville,"125 Hill Street
 Buncombe,3,16.6,53960,110379,North Buncombe Elementary,Weaverville,"251 Flat Creek Church Rd, Weaverville, NC 28787",-82.5685725,35.7460269,Buncombe County Schools,48.6,C,64.2,2
 Buncombe,3,16.6,53960,111304,Hall Fletcher Elementary,Asheville,"60 Ridgelawn Road, Asheville, NC 28806",-82.57415,35.5745461,Asheville City Schools,55.1,C,51.7,3
 Buncombe,3,16.6,53960,110410,Avery's Creek Elementary,Arden,"15 Park South Boulevard, Arden, NC 28704",-82.5792672,35.4774437,Buncombe County Schools,63.9,D,48.5,3
-Buncombe,3,16.6,53960,110500,Nesbitt Discovery Academy,Asheville,"175 Bingham Rd Ste 10, Asheville, NC 28806",-82.5839146,35.6068121,Buncombe County Schools,22,A,>95,1
 Buncombe,3,16.6,53960,110444,Woodfin Elementary,Asheville,"108 Elk Mountain Road, Asheville, NC 28804",-82.584963,35.632111,Buncombe County Schools,45.5,C,56.4,3
 Buncombe,3,16.6,53960,110348,Emma Elementary,Asheville,"37 Brickyard Road, Asheville, NC 28806",-82.5922712,35.5983122,Buncombe County Schools,45.7,C,49.2,3
 Buncombe,3,16.6,53960,11K000,Francine Delany New School,Asheville,"119 Brevard Road, Asheville, NC 28806",-82.5937371,35.5736457,Charter Schools,15.5,B,76.8,2
@@ -339,7 +335,6 @@ Catawba,2,18.7,53738,180380,Startown Elementary,Newton,"4119 Startown Road, Newt
 Catawba,2,18.7,53738,180376,Saint Stephens High,Hickory,"3205 34th Street Drive NE, Hickory, NC 28601",-81.270472,35.774616,Catawba County Schools,46.3,B,62,2
 Catawba,2,18.7,53738,180372,Saint Stephens Elementary,Conover,"684 30th Street NE, Conover, NC 28613",-81.2734772,35.7329893,Catawba County Schools,46.5,C,53.7,3
 Catawba,2,18.7,53738,180336,Clyde Campbell Elementary,Hickory,"2121 35th Avenue Drive NE, Hickory, NC 28601",-81.2874531,35.7779867,Catawba County Schools,42.3,C,61,2
-Catawba,2,18.7,53738,180325,Challenger Early College High,Hickory,"2550 Hwy 70 SE, Hickory, NC 28602",-81.2879271,35.6998273,Catawba County Schools,37,A,>95,1
 Catawba,2,18.7,53738,181326,W M Jenkins Elementary,Hickory,"3750 N Center Street, Hickory, NC 28601",-81.320183,35.7805,Hickory City Schools,47.5,C,59.2,3
 Catawba,2,18.7,53738,181312,Northview Middle,Hickory,"302 28th Avenue NE, Hickory, NC 28601",-81.3243838,35.7669886,Hickory City Schools,53.8,C,59.6,3
 Catawba,2,18.7,53738,181316,Grandview Middle,Hickory,"451 Catawba Valley Boulevard, Hickory, NC 28602",-81.3306379,35.704391,Hickory City Schools,74,C,53.7,3
@@ -488,7 +483,6 @@ Cumberland,1,22.2,46779,26C000,The Capitol Encore Academy,Fayetteville,"126 Hay 
 Cumberland,1,22.2,46779,260382,Lucile Souders Elementary,Fayetteville,"128 Hillview Avenue, Fayetteville, NC 28301",-78.88187,35.099218,Cumberland County Schools,75.8,C,51.4,3
 Cumberland,1,22.2,46779,260408,Pine Forest High,Fayetteville,"525 Andrews Road, Fayetteville, NC 28311",-78.8869153,35.1545967,Cumberland County Schools,59.5,B,60.2,2
 Cumberland,1,22.2,46779,260366,Howard L Hall Elementary,Fayetteville,"526 Andrews Road, Fayetteville, NC 28311",-78.887306,35.157285,Cumberland County Schools,48,C,65.2,2
-Cumberland,1,22.2,46779,260354,Cross Creek Early College,Fayetteville,"1200 Murchison Road, Fayetteville, NC 28301",-78.8925902,35.0756898,Cumberland County Schools,61.4,A,>95,1
 Cumberland,1,22.2,46779,260388,Massey Hill Classical High,Fayetteville,"1062 Southern Avenue, Fayetteville, NC 28306",-78.8949183,35.0311393,Cumberland County Schools,34.6,B,73.8,2
 Cumberland,1,22.2,46779,260347,Cumberland International Early College,Fayetteville,"1200 Murchison Rd, J Knuckles Science Annex, Fayetteville, NC 28303",-78.8952089,35.0733686,Cumberland County Schools,53.1,A,86.8,1
 Cumberland,1,22.2,46779,260359,E E Smith High,Fayetteville,"1800 Seabrook Road, Fayetteville, NC 28301",-78.8957584,35.0847821,Cumberland County Schools,64.9,C,46,3
@@ -505,7 +499,6 @@ Cumberland,1,22.2,46779,260373,Gallberry Farm Elementary,Hope Mills,"8019 Byerly
 Cumberland,1,22.2,46779,260446,Terry Sanford High,Fayetteville,"2301 Fort Bragg Road, Fayetteville, NC 28303",-78.9151218,35.0649076,Cumberland County Schools,55.3,C,44.5,3
 Cumberland,1,22.2,46779,260326,Elizabeth M Cashwell Elementary,Fayetteville,"2970 Legion Road, Fayetteville, NC 28306",-78.9153429,35.006963,Cumberland County Schools,79.4,C,57.2,3
 Cumberland,1,22.2,46779,260365,R Max Abbott Middle,Fayetteville,"590 Winding Creek Road, Fayetteville, NC 28305",-78.9236087,35.0512457,Cumberland County Schools,57.8,C,54.5,3
-Cumberland,1,22.2,46779,260700,Cumberland Polytechnic,Fayetteville,"2201 Hull Rd, Fayetteville, NC 28303",-78.9258784,35.0666422,Cumberland County Schools,51,A,>95,1
 Cumberland,1,22.2,46779,260448,Vanstory Hills Elementary,Fayetteville,"400 Foxhall Road, Fayetteville, NC 28303",-78.9268815,35.0569383,Cumberland County Schools,45.2,B,70,2
 Cumberland,1,22.2,46779,260427,South View High,Hope Mills,"4184 Elk Road, Hope Mills, NC 28348",-78.9280286,34.9787173,Cumberland County Schools,64.9,B,53,3
 Cumberland,1,22.2,46779,260425,South View Middle,Hope Mills,"4100 Elk Road, Hope Mills, NC 28348",-78.9299734,34.9807669,Cumberland County Schools,60.3,D,40.4,3
@@ -2490,4 +2483,3 @@ Yancey,2,23.3,44756,995320,Clearmont Elementary,Burnsville,"1175 Clearmont Schoo
 Yancey,2,23.3,44756,995330,Mountain Heritage High,Burnsville,"333 Mtn Heritage HS Road, Burnsville, NC 28714",-82.3332443,35.9085435,Yancey County Schools,43.1,B,61.1,2
 Yancey,2,23.3,44756,995316,Cane River Middle,Burnsville,"1128 Cane River School Road, Burnsville, NC 28714",-82.3776488,35.9122092,Yancey County Schools,52.7,C,61.3,2
 Yancey,2,23.3,44756,995304,Bald Creek Elementary,Burnsville,"100 Bald Creek School Road, Burnsville, NC 28714",-82.423218,35.91298,Yancey County Schools,58.6,A,85.3,1
-Nash maybe,,,,640342,CITI High School,aaUnknown,aaUnknown,aaUnknown,aaUnknown,Nash-Rocky Mount Schools,83.3,F,<5,1
