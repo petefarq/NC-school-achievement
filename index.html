@@ -6,7 +6,7 @@
     <title>NC School Achievement</title>
 
     <!-- Bootstrap Components-->
-    <link rel="stylesheet" href="static/css/bootstrap-darkly.css">
+    <link rel="stylesheet" href="static/css/bootstrap-flatly.css">
     <link rel="stylesheet" type="text/css" href="static/css/d3Style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -16,13 +16,11 @@
 
 <body>
 
-    <div class="container">
-
         <!-- Navigation -->
         <div class="row">
             <div class="col-md-12">
-                <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary mr-1 ml-1 mb-5 rounded shadow-lg">
-                    <a class="navbar-brand" href="#">Analyzing NC School Achievement</a>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary mr-1 ml-1 rounded shadow-lg">
+                    <span class="navbar-text h3">Analyzing NC School Achievement</span>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -30,51 +28,86 @@
                     <div class="collapse navbar-collapse" id="navbarColor01">
                         <ul class="navbar-nav ml-4 mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link h5" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="Map.html">Mapping</a>
+                                <a class="nav-link h5" href="Map.html">Mapping</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-
-        <!-- Intro text -->
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <div class="m-1 p-4 shadow rounded">
-                    <h3 class="display-5 mt-4">Visualizing North Carolina School Performance Data</h3>
-                    <p class="lead pt-2">
-                        North Carolina's school End of Grade (EOG) test scores correlate strongly with demographic realities of their students and communities.<br>
-                        <br>The following visualizations look at the relationship between of school/county demographics and EOG scores:
-                    </p>
+        
+        <div class="container">
+            
+    <!-- Intro text -->
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="m-1 p-4 shadow rounded">
+                        <h3 class="display-5 mt-4">Visualizing North Carolina School Performance Data</h3>
+                        <p class="lead pt-2">
+                            North Carolina's school End of Grade (EOG) test scores correlate strongly with demographic realities of their students and communities.<br>
+                            <br>The following visualizations look at the relationship between of school/county demographics and EOG scores:
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Chart1 scatterplot-->
-        <div class="row border-bottom border-primary">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-xs-12  col-md-9">
+            <!-- Chart1 scatterplot-->
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="m-1 p-4 shadow rounded">
+                        <h3 class="display-5 mt-4">EOG Scores Vary by Demographic Factors</h3>
                         <!-- Menu to select statistical factor-->
-                        <div><p>Select socioeconomic factor:</p><select id="category"></select></div>
+                        <div><p class="lead pt-2">Select socioeconomic factor:</p><select id="category"></select></div>
                         <div id="scatter">
                             <!-- We append our chart here. -->
                         </div>
                     </div>
                 </div>
+             </div>
+
+            <!-- Chart2 Neural Network Model Fit Tableau-->
+            <div class="row mt-5">
+                <div class="col-md-12">
+                    <div class="m-1 p-4 shadow rounded">
+                        <h3 class="display-5 mt-4">Accuracy of Neural Network Model Predictions</h3>
+                        <p class="lead pt-2">
+                            Given basic school and county demographic data, the Keras Sequential neural network model could predict a school's EOG quintile 60% of the time.
+                        </p>
+                        <div class='tableauPlaceholder' id='viz1581366578027' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NC&#47;NCeducation&#47;Sheet2&#47;1_rss.png' style='border: none' />
+                                </a>
+                            </noscript>
+
+                            <object class='tableauViz' style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                <param name='embed_code_version' value='3' />
+                                <param name='site_root' value='' />
+                                <param name='name' value='NCeducation&#47;Sheet2' />
+                                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NC&#47;NCeducation&#47;Sheet2&#47;1.png' />
+                                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                            </object>
+                        </div>
+
+                        <script type='text/javascript'>var divElement = document.getElementById('viz1581366578027'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                    </div>
+                </div>
             </div>
-        </div>
+            
+    
+            <!-- End of container -->
+            </div>
 
-        <!-- End of container -->
-    </div>
-
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script type="text/javascript" src="static/js/d3-tip.js"></script>
-    <script type="text/javascript" src="static/js/app-charts.js"></script>
+            <script src="https://d3js.org/d3.v5.min.js"></script>
+            <script type="text/javascript" src="static/js/d3-tip.js"></script>
+            <script type="text/javascript" src="static/js/app-charts.js"></script>
 </body>
 
 </html>

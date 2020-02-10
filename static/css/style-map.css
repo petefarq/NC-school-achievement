@@ -1,4 +1,4 @@
-/*body {
+body {
   padding: 0;
   margin: 0;
 }
@@ -7,7 +7,7 @@
 body,
 html {
   height: 100%;
-}*/
+}
 
 .legend {
 line-height: 20px;
@@ -35,9 +35,13 @@ margin-right: 8px;
 
 .custom .leaflet-popup-tip,
 .custom .leaflet-popup-content-wrapper {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(46, 43, 43, 0.7);
   font-family: Georgia;
   font-size: 14px; 
+  border-width: 1px;
+  border-style:solid;
+  border-color: azure;
+  color: azure;
 }
 
 .pageTitle {

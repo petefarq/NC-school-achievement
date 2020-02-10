@@ -19,12 +19,6 @@ var svg = d3.select("#scatter")
     .attr("width", svgWidth)
     .attr("height", svgHeight);
 
-svg.append("rect")
-    .attr("width", "100%")
-    .attr("height", "100%")
-    .attr("fill", "#303030");
-
-
 var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
@@ -32,13 +26,13 @@ var chartGroup = svg.append("g")
 d3.csv("/static/data/main_data_final.csv").then(function(data) {
 
    // Set the names for the x-axis data categories
-    var categories  = ["percent_EDS", 
-                       "poverty_county", 
-                       "median_inc_county", 
-                       "county_poc", 
-                       "children_conc_poverty", 
-                       "no_HSdegree", 
-                       "parent_unemployed"]
+    var categories  = [data.percent_EDS, 
+                       data.poverty_county, 
+                       data.median_inc_county, 
+                       data.county_poc, 
+                       data.children_conc_poverty, 
+                       data.no_HSdegree, 
+                       data.parent_unemployed]
 
     var catLabels = ["% econ disadvantaged students",
                       "county child poverty",
@@ -68,12 +62,12 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
     });
 
     // Initial Params
-      var chosenXAxis = "percent_EDS";
+    var chosenXAxis = data.percent_EDS
 
     // Create scale functions
     // ==============================
     var xLinearScale = d3.scaleLinear()
-        .domain([d3.min(data, d => d.chosenXAxis) - 1, d3.max(data, d => d.chosenXAxis)+1])
+        .domain([d3.min(data, d => chosenXAxis) - 1, d3.max(data, d => chosenXAxis)+1])
       .range([0, width]);
 
     var yLinearScale = d3.scaleLinear()
@@ -100,7 +94,11 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
       .attr("class", "d3-tip")
       .offset([-5, 0])
       .html(function(d) {
-        return (`<u>${d.name}</u><br>EOG Reading/Math: ${d.EOG_18_19}%<br>% Econ Disadvantaged Students: ${d.percent_EDS}%`);
+          return (`<u>${d.name}</u>
+                <br>County: ${d.county}
+                <br>District: ${d.district}
+                <br>EOG Reading/Math: ${d.EOG_18_19}%
+                <br>% Econ Disadvantaged Students: ${d.percent_EDS}%`);
       });
 
     // Create tooltip in the chart
@@ -113,10 +111,10 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
         .data(data)
         .enter()
         .append("circle")
-        .attr("cx", d => xLinearScale(d.chosenXAxis))
+        .attr("cx", d => xLinearScale(chosenXAxis))
         .attr("cy", d => yLinearScale(d.EOG_18_19))
         .attr("r", "5")
-        .attr("fill", "green")
+        .attr("fill", "steelblue")
         .attr("opacity", .3)
         .attr("stroke", "black")
         .attr("stroke-width","0")
@@ -145,7 +143,7 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
 
         // create scales
         var xLinearScale = d3.scaleLinear()
-            .domain([d3.min(data, d => d.chosenXAxis) - 1, d3.max(data, d => d.chosenXAxis) + 1])
+            .domain([d3.min(data, d => chosenXAxis) - 1, d3.max(data, d => chosenXAxis) + 1])
             .range([0, width]);
 
         return xLinearScale;

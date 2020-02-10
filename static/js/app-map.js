@@ -24,20 +24,7 @@ d3.json("NC_Counties.geojson", function(data) {
   };
 
   function style(feature) {
-      
-      // function getColor(d) {
-
-      //     var color = "";
-
-      //     for (var i = 0; i < county_colors.length; i++) {
-      //       console.log(county_colors[i].CO_NAME);
-      //       if (county_colors[i].CO_NAME == CO_NAME) {
-      //         color = county_colors[i].hue;
-      //         break;
-      //       }
-      //     }
-      //     return color;
-      // };    
+  
         
       return {
           fillColor: "white",
@@ -76,7 +63,7 @@ function createFeatures(schoolData) {
             color: color,
             opacity: .6,
             fillColor: fillcolor,
-            radius: 2500
+            radius: 1000
             }).bindPopup(("<p><strong>" + feature.properties.name + "</strong><br>" +
                         feature.properties.district + "<br>" +
                         "EOG 2018/2019: "  + feature.properties.EOG_18_19 + "%" + "<br>" +
