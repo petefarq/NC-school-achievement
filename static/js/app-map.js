@@ -7,7 +7,7 @@ var myMap = L.map("map", {
 L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
     maxZoom: 18,
-    id: "mapbox.light",
+    id: "mapbox.dark",
     accessToken: API_KEY
 }).addTo(myMap);
 
@@ -44,11 +44,11 @@ d3.json("NC_Counties.geojson", function(data) {
           fillOpacity: 0,
           weight: 1,
           opacity: 1,
-          color: "black"
+          color: "white"
       }
   }
   
-  L.geoJson(data, {onEachFeature: onEachFeature, style: style, interactive: false}).addTo(myMap).openTooltip();
+  L.geoJson(data, {onEachFeature: onEachFeature, style: style, color:"white",interactive: false}).addTo(myMap).openTooltip();
 
 }); 
 
@@ -72,10 +72,11 @@ function createFeatures(schoolData) {
         
         // Add circles to map with popup
         L.circle([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], {
-            fillOpacity: .8,
+            fillOpacity: .7,
             color: color,
+            opacity: .6,
             fillColor: fillcolor,
-            radius: 1000
+            radius: 2500
             }).bindPopup(("<p><strong>" + feature.properties.name + "</strong><br>" +
                         feature.properties.district + "<br>" +
                         "EOG 2018/2019: "  + feature.properties.EOG_18_19 + "%" + "<br>" +
