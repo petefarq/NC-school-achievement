@@ -24,28 +24,29 @@ var chartGroup = svg.append("g")
 
 // Load data
 d3.csv("/static/data/main_data_final.csv").then(function(data) {
-
+    console.log(data);
    // Set the names for the x-axis data categories
-    var categories  = [data.percent_EDS, 
-                       data.poverty_county, 
-                       data.median_inc_county, 
-                       data.county_poc, 
-                       data.children_conc_poverty, 
-                       data.no_HSdegree, 
-                       data.parent_unemployed]
+    var categories  = ["percent_EDS", 
+                       "poverty_county", 
+                       "median_inc_county", 
+                       "county_poc", 
+                       "children_conc_pov", 
+                       "No_HSdegree", 
+                       "parent_unemployed"]
 
-    var catLabels = ["% econ disadvantaged students",
-                      "county child poverty",
-                      "county median income",
-                      "county % people of color",
-                      "% of county children living in concentrated poverty areas",
-                      "% of county heads of household with no HS degree",
-                      "% of county children with no workforce member in household"] 
+    var catLabels = ["% Economically Disadvantaged Students",
+                      "County Child Poverty Rate",
+                      "County Median Income",
+                      "County % People of Color",
+                      "% of County's Children in Concentrated Poverty Tracts",
+                      "% of County Heads of Household Without HS Degree",
+                      "% of County Children with no Household Member in Workforce"] 
     
     // Create dropdown for choosing demographic categories
     var options = d3.select("#category").selectAll("option")
-      .data(categories)
-      .enter().append("option")
+        .data(categories)
+        .enter().append("option")
+        .attr("value", function(data, index) {return data})
       .text(function(data, index) {return catLabels[index]})
 
     // Parse Data/Cast as numbers
@@ -56,18 +57,18 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
         data.poverty_county = +data.poverty_county;
         data.median_inc_county = +data.median_inc_county;
         data.county_poc = +data.county_poc;
-        data.children_conc_poverty = +data.children_conc_poverty;
-        data.no_HSdegree = +data.no_HSdegree;
+        data.children_conc_pov = +data.children_conc_pov;
+        data.No_HSdegree = +data.No_HSdegree;
         data.parent_unemployed = +data.parent_unemployed
     });
 
     // Initial Params
-    var chosenXAxis = data.percent_EDS
+    var chosenXAxis = 'percent_EDS'
 
     // Create scale functions
     // ==============================
     var xLinearScale = d3.scaleLinear()
-        .domain([d3.min(data, d => chosenXAxis) - 1, d3.max(data, d => chosenXAxis)+1])
+        .domain([d3.min(data, d => d[chosenXAxis]) - 1, d3.max(data, d => d[chosenXAxis]) + 1])
       .range([0, width]);
 
     var yLinearScale = d3.scaleLinear()
@@ -76,14 +77,14 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
 
     // Create axis functions
     // ==============================
-    var xAxis = d3.axisBottom(xLinearScale);
+    var bottomAxis = d3.axisBottom(xLinearScale);
     var yAxis = d3.axisLeft(yLinearScale);
 
     // Append Axes to the chart
     // ==============================
-    chartGroup.append("g")
+    var xAxis = chartGroup.append("g")
       .attr("transform", `translate(0, ${height})`)
-      .call(xAxis);
+      .call(bottomAxis);
 
     chartGroup.append("g")
       .call(yAxis);
@@ -111,7 +112,7 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
         .data(data)
         .enter()
         .append("circle")
-        .attr("cx", d => xLinearScale(chosenXAxis))
+        .attr("cx", d => xLinearScale(d[chosenXAxis]))
         .attr("cy", d => yLinearScale(d.EOG_18_19))
         .attr("r", "5")
         .attr("fill", "steelblue")
@@ -127,7 +128,7 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
           toolTip.hide(d);
         })
 
-    // Create axes labels
+    // Create y axis label
     chartGroup.append("text")
         .attr("transform", "rotate(-90)")
         .attr("y", 20 - margin.left)
@@ -136,55 +137,29 @@ d3.csv("/static/data/main_data_final.csv").then(function(data) {
         .attr("class", "aText")
         .text("Reading/Math End-of-Grade Score 2018/19");
 
-    //-- Functions and event listener for updating chart after a dropdown choice ----
 
-    // function used for updating x-scale var upon click on dropdown choice
-    function xScale(data, chosenXAxis) {
-
-        // create scales
-        var xLinearScale = d3.scaleLinear()
-            .domain([d3.min(data, d => chosenXAxis) - 1, d3.max(data, d => chosenXAxis) + 1])
-            .range([0, width]);
-
-        return xLinearScale;
-    }
-
-    // function used for updating xAxis var upon click on dropdown choice
-    function renderAxes(newXScale) {
-        var xAxis = d3.axisBottom(newXScale);
-
-        xAxis.transition()
-            .duration(1000)
-            .call(xAxis);
-
-        return xAxis;
-    }
-
-    // function used for updating circles group with a transition to
-    // new circles upon click on dropdown choice
-    function renderCircles(circlesGroup, newXScale, chosenXaxis) {
-
-        circlesGroup.transition()
-            .duration(1000)
-            .attr("cx", d => newXScale(d[chosenXAxis]));
-
-        return circlesGroup;
-    }
-
-   var select = d3.select("#category1")
+    // Event listener and function for re-drawing chart with dropdown change
+    var select = d3.select("#category")
         .on("change", function () {
-            chosenXaxis = this.value;
+            var chosen = this.value;
+            console.log(chosen)
+            console.log(data, 'the data again')
+            var newScale = d3.scaleLinear()
+                .domain([d3.min(data, d => d[chosen]), d3.max(data, d => d[chosen])])
+                .range([0, width]);
 
-            xScale(data, chosenXAxis);
+            var bottomAxis = d3.axisBottom(newScale);
+            
+            xAxis.transition().duration(1000).call(bottomAxis);
 
-            renderAxes(newXScale, xAxis);
-
-            renderCircles(circlesGroup, newXScale, chosenXaxis);
-
+            circlesGroup.transition()
+                .duration(1000)
+                .attr("cx", d => newScale(d[chosen]));
         })
 
   }).catch(function(error) {
-    console.log(error);
+      console.log(error);
+      throw error;
   });
 
 
