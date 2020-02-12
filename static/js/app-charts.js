@@ -20,7 +20,7 @@ var svg = d3.select("#scatter")
     .attr("height", svgHeight);
 
 var chartGroup = svg.append("g")
-  .attr("transform", `translate(${margin.left}, ${margin.top})`);
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // Load data
 d3.csv("static/data/main_data_final.csv").then(function(data) {
@@ -89,6 +89,36 @@ d3.csv("static/data/main_data_final.csv").then(function(data) {
     chartGroup.append("g")
       .call(yAxis);
 
+   
+
+    // functions to add gridlines
+    function make_x_gridlines() {
+        return d3.axisBottom(xLinearScale)
+            .ticks(5)
+    }
+
+    function make_y_gridlines() {
+        return d3.axisLeft(yLinearScale)
+            .ticks(5)
+    }
+
+    // add the X gridlines
+   var xGridlines = chartGroup.append("g")
+        .attr("class", "grid")
+        .attr("transform", "translate(0," + height + ")")
+        .call(make_x_gridlines()
+            .tickSize(-height)
+            .tickFormat("")
+        )
+
+    // add the Y gridlines
+    chartGroup.append("g")
+        .attr("class", "grid")
+        .call(make_y_gridlines()
+            .tickSize(-width)
+            .tickFormat("")
+            )
+
      // Initialize tool tip
     //==============================
     var toolTip = d3.tip()
@@ -106,6 +136,7 @@ d3.csv("static/data/main_data_final.csv").then(function(data) {
     // ==============================
     chartGroup.call(toolTip);
 
+ 
       // Create Circles
     // ==============================
     var circlesGroup = chartGroup.selectAll("circle")
@@ -117,7 +148,7 @@ d3.csv("static/data/main_data_final.csv").then(function(data) {
         .attr("r", "5")
         .attr("fill", "steelblue")
         .attr("opacity", .3)
-        .attr("stroke", "black")
+        .attr("stroke", "steelblue")
         .attr("stroke-width","0")
         .on('mouseover', function(d) {
           d3.select(this).style('stroke-width','4');
@@ -135,22 +166,35 @@ d3.csv("static/data/main_data_final.csv").then(function(data) {
         .attr("x", 0 - (height / 2))
         .attr("dy", "1em")
         .attr("class", "aText")
-        .text("Reading/Math End-of-Grade Score 2018/19");
+        .text("End-of-Grade Score 2018/19");
 
 
     // Event listener and function for re-drawing chart with dropdown change
     var select = d3.select("#category")
         .on("change", function () {
             var chosen = this.value;
-            console.log(chosen)
-            console.log(data, 'the data again')
             var newScale = d3.scaleLinear()
                 .domain([d3.min(data, d => d[chosen]), d3.max(data, d => d[chosen])])
                 .range([0, width]);
 
             var bottomAxis = d3.axisBottom(newScale);
+
+            // functions to add gridlines
+            function make_x_gridlines() {
+                return d3.axisBottom(newScale)
+                    .ticks(5)
+            }
             
-            xAxis.transition().duration(1000).call(bottomAxis);
+            xAxis.transition()
+                .duration(1000)
+                .call(bottomAxis)
+
+            xGridlines.transition()
+                .duration(1000)
+                .attr("class", "grid")
+                .call(make_x_gridlines()
+                    .tickSize(-height)
+                    .tickFormat(""));
 
             circlesGroup.transition()
                 .duration(1000)

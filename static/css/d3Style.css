@@ -1,6 +1,6 @@
 .aText {
-  font-family: serif;
-  font-size: 22px;
+  font-family: sans-serif;
+  font-size: 18px;
   text-anchor: middle;
 }
 
@@ -41,6 +41,16 @@
   border-width: 1px;
   border-color: black;
   border-style: solid;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.9;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
 }
 
 /* Mobile Rules */
